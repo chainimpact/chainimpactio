@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ChainIMPACT</title>
+        <meta name="description" content="Blockchain services for business.">
+
+        <link rel="icon" href="img/favicon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Markazi+Text|Slabo+27px" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+
+
+        <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            /* background: #05386b; */
+            background: #286DA8;
+            color: #bbb;
+        }
+
+        a {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        #header {
+            max-width: 680px;
+        }
+
+        #content{
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        #logo img {
+            max-width: 680px;
+        }
+
+        #baseline {
+            font-family: 'Encode Sans Condensed', sans-serif;
+            color: #ddd;
+            font-size: 3.5em;
+            padding: 20px 0;
+        }
+
+        #description {
+            max-width: 550px;
+            font-family: 'Slabo 27px', 'Markazi Text', serif;
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
+
+        footer {
+            /* flex */
+            font-family: 'Encode Sans Condensed', sans-serif;
+            font-size: 1.15em;
+            margin: 100px;
+        }
+
+        .hidden {
+            /* color: #286DA8; */
+            opacity: 0.15;
+        }
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <div class="standard-slideshow slideshow-wrapper" data-colors="#3bc492,#3dbfd9,#1c80a5,#ff96b9,#88c800,#ffb72c,#cb6412,#ff637d,#fe603a,#866cba,#b15fa2,#00974d,#ce64b4,#2c9bc7">
+
+        <div id="content">
+
+            <div id="header">
+                <h1 id="logo">
+                    <img src="img/logo-cw-03.png" alt="chain impact">
+                </h1>
+
+                <h2 id="baseline">
+                    Services Blockchain pour votre societé
+                </h2>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <p id="description">
+                Nous pensons que la technologie <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain</a> peut amelliorer votre business et nous savons comment contruir et l'integrer a votre systeme actuel.
+                <br />
+                <br />
+                We offer assitance in researching if blockchain is interesting for your specific use-case, we develop proof of concepts for early stage projects and we plan, execute ad code long term projects.
+            </p>
+
+            <br />
+
+        </div>
+
+        <footer>
+            Nous sommes localisés à Toulouse.
+            <br>
+            contactez nous vers
+            <span><a href="mailto:contact@chainimpact.io?Subject=Hello"> contact@chainimpact.io</a></span>
+            <br>
+            <br>
+            Langages: <a href="en.html">EN</a>, <a href="es.html">ES</a>, <a href="fr.html">FR</a>
+            <br>
+            <br>
+            <a class="hidden" href="v02.html">v1</a>
+            <br>
+            <a class="hidden" href="v02.html">v2</a>
+            <br>
+            <a class="hidden" href="v02.html">v3</a>
+        </footer>
+
+    </body>
+
+    <script type="text/javascript">
+        console.log(navigator.languages);
+
+        if (navigator.languages[0] == 'en') {
+            console.log("not changing language");
+        }
+        else if (navigator.languages[0] == 'es'){
+            console.log("changing to spanish");
+        }
+        else if (navigator.languages[0] == 'fr'){
+            console.log("changing to french");
+        }
+        var dictionaries = {
+            fr: {
+                intro: "ceci est un teste",
+                test: "teste",
+                hello: "bonjour"
+            },
+            es: {
+                test: "prueba",
+                hello: "hola",
+                intro: "this is a test"
+            }
+        }
+
+    </script>
+
+</html>
