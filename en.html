@@ -151,34 +151,4 @@
 
     </body>
 
-    <script type="text/javascript">
-
-        console.log('navigator.languages');
-        console.log(navigator.languages);
-        console.log('navigator.language');
-        console.log(navigator.language);
-        console.log('navigator.userLanguage');
-        console.log(navigator.userLanguage);
-        console.log('navigator.browserLanguage');
-        console.log(navigator.browserLanguage);
-        console.log('navigator.systemLanguage');
-        console.log(navigator.systemLanguage);
-
-        if (window.location.href.indexOf("en.html") < 1){
-            if (navigator.languages[0] == 'en'){
-                window.location.replace('en.html');
-                console.log("EN");
-            }
-            else if (navigator.languages[0] == 'es'){
-                window.location.replace('es.html');
-                console.log("ES");
-            }
-            else if (navigator.languages[0] == 'fr'){
-                window.location.replace('fr.html');
-                console.log("FR");
-            }
-        };
-
-    </script>
-
 </html>
