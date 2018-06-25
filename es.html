@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <title>ChainIMPACT</title>
@@ -7,72 +7,11 @@
 
         <link rel="icon" href="img/favicon.png">
 
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Markazi+Text|Slabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Slabo+27px" rel="stylesheet">
+
         <link href="css/reset.css" rel="stylesheet">
-
-
-        <style media="screen">
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            li {
-                list-style-type: none;
-            }
-
-            body {
-                /* background: #05386b; */
-                background: #286DA8;
-                color: #bbb;
-            }
-
-            a {
-                color: #FFA500;
-                text-decoration: none;
-            }
-
-            #header {
-                max-width: 680px;
-            }
-
-            #content{
-                margin-top: 100px;
-                margin-left: 100px;
-            }
-
-            #logo img {
-                max-width: 680px;
-            }
-
-            #baseline {
-                font-family: 'Encode Sans Condensed', sans-serif;
-                color: #ddd;
-                font-size: 3.5em;
-                padding: 20px 0;
-            }
-
-            #description {
-                max-width: 550px;
-                font-family: 'Slabo 27px', 'Markazi Text', serif;
-                font-size: 1.7em;
-                line-height: 1.2em;
-            }
-
-            footer {
-                /* flex */
-                font-family: 'Encode Sans Condensed', sans-serif;
-                font-size: 1.15em;
-                margin: 100px;
-            }
-
-            .hidden {
-                /* color: #286DA8; */
-                opacity: 0.15;
-            }
-
-        </style>
-
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
 
     </head>
     <body>
@@ -83,7 +22,7 @@
 
             <div id="header">
                 <h1 id="logo">
-                    <img src="img/logo-cw-03.png" alt="chain impact">
+                    <img src="img/logo-cw-02.png" alt="chain impact">
                 </h1>
 
                 <h2 id="baseline">
@@ -93,15 +32,37 @@
 
             <br>
             <br>
-            <br>
             <p id="description">
-                We believe <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain technology</a> can improve businesses we and know how to build and integrate into a existing business framework.
+                We believe <a href="https://es.wikipedia.org/wiki/Blockchain">blockchain technology</a> can improve businesses we and know how to build and integrate into a existing business framework.
                 <br />
                 <br />
                 We offer assitance in researching if blockchain is interesting for your specific use-case, we develop proof of concepts for early stage projects and we plan, execute ad code long term projects.
             </p>
 
             <br />
+
+            <h3>Contactenos para más información:</h3>
+
+                <form method="post" action="form.php">
+
+                    <label>Nombre</label>
+                    <input name="name" placeholder="Juan Do">
+
+                    <br>
+
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="jondo@email.com">
+                    <br>
+
+                    <label>Mensaje</label>
+                    <textarea name="message" placeholder="Mi Meansaje"></textarea>
+
+                    <br>
+                    <br>
+                    <input id="submit" name="submit" type="submit" value="Send">
+
+                </form>
+
 
         </div>
 <!--

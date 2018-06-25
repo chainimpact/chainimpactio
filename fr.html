@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>ChainIMPACT</title>
@@ -8,71 +8,10 @@
         <link rel="icon" href="img/favicon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Markazi+Text|Slabo+27px" rel="stylesheet">
+
         <link href="css/reset.css" rel="stylesheet">
-
-
-        <style media="screen">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        body {
-            /* background: #05386b; */
-            background: #286DA8;
-            color: #bbb;
-        }
-
-        a {
-            color: #FFA500;
-            text-decoration: none;
-        }
-
-        #header {
-            max-width: 680px;
-        }
-
-        #content{
-            margin-top: 100px;
-            margin-left: 100px;
-        }
-
-        #logo img {
-            max-width: 680px;
-        }
-
-        #baseline {
-            font-family: 'Encode Sans Condensed', sans-serif;
-            color: #ddd;
-            font-size: 3.5em;
-            padding: 20px 0;
-        }
-
-        #description {
-            max-width: 550px;
-            font-family: 'Slabo 27px', 'Markazi Text', serif;
-            font-size: 1.7em;
-            line-height: 1.2em;
-        }
-
-        footer {
-            /* flex */
-            font-family: 'Encode Sans Condensed', sans-serif;
-            font-size: 1.15em;
-            margin: 100px;
-        }
-
-        .hidden {
-            /* color: #286DA8; */
-            opacity: 0.15;
-        }
-
-        </style>
-
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
 
     </head>
     <body>
@@ -83,26 +22,51 @@
 
             <div id="header">
                 <h1 id="logo">
-                    <img src="img/logo-cw-03.png" alt="chain impact">
+                    <img src="img/logo-cw-02.png" alt="chain impact">
                 </h1>
 
                 <h2 id="baseline">
-                    Services Blockchain pour votre societé
+                    La blockchain pour votre entreprise
                 </h2>
             </div>
 
             <br>
             <br>
-            <br>
 
             <p id="description">
-                Nous pensons que la technologie <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain</a> peut amelliorer votre business et nous savons comment contruir et l'integrer a votre systeme actuel.
-                <br />
-                <br />
-                We offer assitance in researching if blockchain is interesting for your specific use-case, we develop proof of concepts for early stage projects and we plan, execute ad code long term projects.
+                La <a href="https://fr.wikipedia.org/wiki/Blockchain">technologie Blockchain</a> permet d’améliorer efficacement certaines parties de votre business. Nous en sommes conscient et nous savons comment l’intégrer dans votre activité.
+                <br>
+                <br>
+                Nous vous aidons à déterminer si la blockchain est bénéfique dans le cas précis de votre entreprise.
+                <br>
+                Nous développons des preuves de concepts pour valider l’intérêt de la blockchain.
+                Nous développons des projets sur mesure en fonction de la blockchain la mieux adaptée à vos besoins.
             </p>
 
             <br />
+
+            <h3>Contactez nous pour plus d'information :</h3>
+
+                <form method="post" action="form.php">
+
+                    <label>Nom</label>
+                    <input name="name" placeholder="Jean D'eau">
+
+                    <br>
+
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="jeandeau@email.fr">
+                    <br>
+
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Le message"></textarea>
+
+                    <br>
+                    <br>
+                    <input id="submit" name="submit" type="submit" value="Envoyer">
+
+                </form>
+
 
         </div>
 
@@ -114,13 +78,6 @@
             <br>
             <br>
             Langages: <a href="en.html">EN</a>, <a href="es.html">ES</a>, <a href="fr.html">FR</a>
-            <br>
-            <br>
-            <a class="hidden" href="v02.html">v1</a>
-            <br>
-            <a class="hidden" href="v02.html">v2</a>
-            <br>
-            <a class="hidden" href="v02.html">v3</a>
         </footer>
 
     </body>

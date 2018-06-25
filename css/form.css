@@ -1,0 +1,54 @@
+form {
+    width: 500px;
+	color: white;
+}
+
+label {
+    font-family: 'Slabo', Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+    display: block;
+}
+
+input, textarea {
+    color: white;
+	width: 500px;
+	height: 2em;
+	background: none;
+	border: 1px solid white;
+	padding: 10px 0;
+	margin-top: 10px;
+}
+
+	input:focus, textarea:focus {
+		border: 2px solid #FFA500;
+	}
+
+textarea, ::placeholder {
+    color: white;
+	height: 200px;
+
+}
+
+
+form > ::placeholder {
+    padding-left: 20px;
+    font-size: 1.4em;
+    font-family: 'Slabo', Arial, Helvetica, sans-serif;
+}
+
+#submit {
+    padding: 30px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: white;
+    border: 1px solid #FFA500;
+	/* height: 38px; */
+	/* margin-top: 20px; */
+	cursor: pointer;
+    /* width: 100%; */
+}
+
+	#submit:hover {
+		background: #FFA500;
+        /* opacity: 0.8; */
+	}

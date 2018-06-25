@@ -8,71 +8,10 @@
         <link rel="icon" href="img/favicon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Markazi+Text|Slabo+27px" rel="stylesheet">
+
         <link href="css/reset.css" rel="stylesheet">
-
-
-        <style media="screen">
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            li {
-                list-style-type: none;
-            }
-
-            body {
-                /* background: #05386b; */
-                background: #286DA8;
-                color: #bbb;
-            }
-
-            a {
-                color: #FFA500;
-                text-decoration: none;
-            }
-
-            #header {
-                max-width: 680px;
-            }
-
-            #content{
-                margin-top: 100px;
-                margin-left: 100px;
-            }
-
-            #logo img {
-                max-width: 680px;
-            }
-
-            #baseline {
-                font-family: 'Encode Sans Condensed', sans-serif;
-                color: #ddd;
-                font-size: 3.5em;
-                padding: 20px 0;
-            }
-
-            #description {
-                max-width: 550px;
-                font-family: 'Slabo 27px', 'Markazi Text', serif;
-                font-size: 1.7em;
-                line-height: 1.2em;
-            }
-
-            footer {
-                /* flex */
-                font-family: 'Encode Sans Condensed', sans-serif;
-                font-size: 1.15em;
-                margin: 100px;
-            }
-
-            .hidden {
-                /* color: #286DA8; */
-                opacity: 0.15;
-            }
-
-        </style>
-
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
 
     </head>
     <body>
@@ -104,6 +43,28 @@
             </p>
 
             <br />
+            <h3>Contact us for more information:</h3>
+
+                <form method="post" action="form.php">
+
+                    <label>Name</label>
+                    <input name="name" placeholder="John Doe">
+
+                    <br>
+
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="johndoe@email.com">
+                    <br>
+
+                    <label>Message</label>
+                    <textarea name="message" placeholder="This is the message"></textarea>
+
+                    <br>
+                    <br>
+                    <input id="submit" name="submit" type="submit" value="Send">
+
+                </form>
+
 
         </div>
 
