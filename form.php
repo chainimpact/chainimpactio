@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     $to = $_POST['email'];
     $subject = $_POST['name'];
     $message = getRequestURI();
-    $from = "zenphoto@example.com";
+    $from = "contact@chainimpact.io";
     $headers = "From:" . $from;
 
     if (mail($to, $subject, $message, $headers)) {
