@@ -9,7 +9,7 @@ li {
 
 body {
     background: #286DA8;
-    color: #bbb;
+    color: #ccc;
 }
 
 a {
@@ -59,4 +59,24 @@ footer {
 .hidden {
     /* color: #286DA8; */
     opacity: 0.15;
+}
+
+#thanks {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 1.6em;
+    line-height: 2em;
+    color: #555;
+    width: 100%;
+    /* margin: 20px; */
+    padding: 20px;
+    display: block;
+    background: #FFA500;
+}
+
+#thanks p {
+    margin-left; 100px;
+}
+
+#thanks img {
+    width: 30px;
 }

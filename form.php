@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['submit'])) {
-    $to = $_POST['email'];
+    $to = "contact@chainimpact.io";
     $subject = $_POST['name'];
     $message = getRequestURI();
     $from = "contact@chainimpact.io";

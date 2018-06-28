@@ -7,6 +7,7 @@ label {
     font-family: 'Slabo', Arial, Helvetica, sans-serif;
 	margin-top: 20px;
     display: block;
+    color: #6EA2CE;
 }
 
 input, textarea {
@@ -14,7 +15,7 @@ input, textarea {
 	width: 500px;
 	height: 2em;
 	background: none;
-	border: 1px solid white;
+	border: 1px solid #fff;
 	padding: 10px 0;
 	margin-top: 10px;
 }
@@ -23,12 +24,14 @@ input, textarea {
 		border: 2px solid #FFA500;
 	}
 
-textarea, ::placeholder {
+textarea {
     color: white;
-	height: 200px;
-
+    height: 200px;
 }
 
+::placeholder {
+    color: #0C5796;
+}
 
 form > ::placeholder {
     padding-left: 20px;
@@ -37,7 +40,7 @@ form > ::placeholder {
 }
 
 #submit {
-    padding: 30px;
+    padding: 25px 0 50px 0;
     font-size: 1.2em;
     line-height: 1.2em;
     color: white;

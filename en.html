@@ -18,11 +18,18 @@
 
         <div class="standard-slideshow slideshow-wrapper" data-colors="#3bc492,#3dbfd9,#1c80a5,#ff96b9,#88c800,#ffb72c,#cb6412,#ff637d,#fe603a,#866cba,#b15fa2,#00974d,#ce64b4,#2c9bc7">
 
+        <div id="thanks">
+            <p>
+                <img src="img/email_icon_b_xs.png" alt="">
+                Thank you for your email, we will answer back quickly.
+            </p>
+        </div>
+
         <div id="content">
 
             <div id="header">
                 <h1 id="logo">
-                    <img src="img/logo-cw-02.png" alt="chain impact">
+                    <img src="img/logo-cw-xs.png" alt="chain impact">
                 </h1>
 
                 <h2 id="baseline">
@@ -45,7 +52,9 @@
             <br />
             <h3>Contact us for more information:</h3>
 
-                <form method="post" action="form.py">
+                <form method="post" action="https://formspree.io/felipe@chainimpact.io">
+
+                    <input type="hidden" name="_next" value="http://chainimpact.io/en.html?thank=you" />
 
                     <label>Name</label>
                     <input name="name" placeholder="John Doe">
@@ -79,5 +88,15 @@
         </footer>
 
     </body>
+
+    <script type="text/javascript">
+        var thanks = document.getElementById("thanks");
+
+        if (window.location.search.indexOf('thank=you') > -1){
+            thanks.style.visibility="visible";
+        } else {
+            thanks.style.visibility="hidden";
+        }
+    </script>
 
 </html>
