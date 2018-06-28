@@ -1,18 +1,12 @@
 <?php
-
-if (isset($_POST['submit'])) {
+if(isset($_POST['submit'])){
     $to = "contact@chainimpact.io";
-    $subject = $_POST['name'];
-    $message = getRequestURI();
-    $from = "contact@chainimpact.io";
+    $from = $_POST['email'];
+    $first_name = $_POST['name'];
+    $subject = "Contact ChainImapact";
+    $message = $name . "\n\n" . $_POST['message'];
+
     $headers = "From:" . $from;
-
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Mail Sent.";
+    mail($to,$subject,$message,$headers);
     }
-    else {
-        echo "failed";
-    }
-}
-
 ?>
