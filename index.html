@@ -48,7 +48,6 @@
             <h3>Contact us for more information:</h3>
 
                 <form method="post" action="form.php">
-
                     <label>Name</label>
                     <input name="name" placeholder="John Doe">
 
@@ -64,41 +63,9 @@
                     <br>
                     <br>
                     <input id="submit" name="submit" type="submit" value="Send">
-
                 </form>
 
-
         </div>
-
-
-
-<!--
-        <div id="content">
-
-            <h1 id="logo">
-                <img src="logo-c-03.png" alt="chain impact">
-            </h1>
-
-            <h2 id="baseline">
-                Blockchain services for business
-            </h2>
-            <br>
-            <p>
-                We believe blockchain technology can improve businesses we and know how to build and integrate into a existing business framework.
-                <br />
-                These are some of the blockchain projects we've done:
-            </p>
-
-            <br />
-
-            <div class="portofolio">
-                <ul>
-                    <li><a href="#">Legacy</a>  <span>blockchain based wills and testaments </li></span>
-                    <li><a href="#">sChain</a>  <span>Medical Patient Safe File Transfer, UI and blockchain research</li></span>
-                    <li><a href="#">copolo.io</a>  <span>multi-chain blockchain explorer</li></span>
-                </ul>
-            </div>
-        </div> -->
 
         <footer>
             We're located in Toulouse, France.
@@ -113,43 +80,25 @@
     </body>
 
     <script type="text/javascript">
-
-        console.log('navigator.languages:');
-        console.log(navigator.languages);
-        console.log('navigator.language:');
-        console.log(navigator.language);
-        console.log('navigator.userLanguage:');
-        console.log(navigator.userLanguage);
-        console.log('navigator.browserLanguage:');
-        console.log(navigator.browserLanguage);
-        console.log('navigator.systemLanguage:');
-        console.log(navigator.systemLanguage);
-
         // language selection
-        //
-        // if (window.location.href.indexOf("en.html") < 1){
-        //     if (navigator.languages[0] == 'en'){
-        //         window.location.replace('en.html');
-        //         console.log("EN");
-        //     }
-        //     else if (navigator.languages[0] == 'es'){
-        //         window.location.replace('es.html');
-        //         console.log("ES");
-        //     }
-        //     else if (navigator.languages[0] == 'es-ES'){
-        //         window.location.replace('es.html');
-        //         console.log("ES");
-        //     }
-        //     else if (navigator.languages[0] == 'fr') {
-        //         window.location.replace('fr.html');
-        //         console.log("FR");
-        //     }
-        //     else if (navigator.languages[0] == 'fr-FR') {
-        //         window.location.replace('fr.html');
-        //         console.log("FR");
-        //     }
-        // };
+        if (window.location.href.indexOf("en.html") < 1){
+            var main_language = navigator.languages[0].toLowerCase();
+
+            if (main_language.includes('en')){
+                window.location.replace('en.html');
+                console.log("EN");
+            }
+
+            if (main_language.includes('fr')){
+                window.location.replace('fr.html');
+                console.log("FR");
+            }
+
+            if (main_language.includes('es')){
+                window.location.replace('es.html');
+                console.log("ES");
+            }
+        };
 
     </script>
-
 </html>
