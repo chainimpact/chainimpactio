@@ -26,13 +26,18 @@
     </head>
     <body>
 
-        <div class="standard-slideshow slideshow-wrapper" data-colors="#3bc492,#3dbfd9,#1c80a5,#ff96b9,#88c800,#ffb72c,#cb6412,#ff637d,#fe603a,#866cba,#b15fa2,#00974d,#ce64b4,#2c9bc7">
+        <div id="thanks">
+            <p>
+                <img src="img/email_icon_b_xs.png" alt="">
+                Thank you for your email, we will answer back quickly.
+            </p>
+        </div>
 
         <div id="content">
 
             <div id="header">
                 <h1 id="logo">
-                    <img src="img/logo-cw-02.png" alt="chain impact">
+                    <img src="img/logo-cw-xs.png" alt="chain impact">
                 </h1>
 
                 <h2 id="baseline">
@@ -42,22 +47,23 @@
 
             <br>
             <br>
+            <br>
             <p id="description">
                 <a href="https://en.wikipedia.org/wiki/Blockchain">Blockchain technology</a> can improve businesses and we understand how to build and integrate it into your existing business framework.
                 <br />
                 <br />
                 We offer assistance in researching if blockchain is interesting for your specific use-case.
                 <br>
-                We develop proof of concepts for early stage projects.
-                <br>
-                We plan, execute and code long-term projects.
+                We develop proof of concepts for early stage projects and we plan, execute and code smart contracts or full long-term projects.
             </p>
 
             <br />
-
             <h3>Contact us for more information:</h3>
 
                 <form method="post" action="https://formspree.io/contact@chainimpact.io">
+
+                    <input type="hidden" name="_next" value="http://chainimpact.io/en.html?thank=you" />
+
                     <label>Name</label>
                     <input name="name" placeholder="John Doe">
 
@@ -73,7 +79,9 @@
                     <br>
                     <br>
                     <input id="submit" name="submit" type="submit" value="Send">
+
                 </form>
+
 
         </div>
 
@@ -81,7 +89,7 @@
             We're located in Toulouse, France.
             <br>
             Contact us at
-            <span><a href="mailto:contact@chainimpact.io?Subject=Hello"> contact@chainimpact.io</a></span>
+            <span><a href="mailto:contact@chainimpact.io?Subject=Contact"> contact@chainimpact.io</a></span>
             <br>
             <br>
             Languages: <a href="en.html">EN</a>, <a href="es.html">ES</a>, <a href="fr.html">FR</a>
@@ -90,25 +98,13 @@
     </body>
 
     <script type="text/javascript">
-        // language selection
-        if (window.location.href.indexOf("en.html") < 1){
-            var main_language = navigator.languages[0].toLowerCase();
+        var thanks = document.getElementById("thanks");
 
-            if (main_language.includes('en')){
-                window.location.replace('en.html');
-                console.log("EN");
-            }
-
-            if (main_language.includes('fr')){
-                window.location.replace('fr.html');
-                console.log("FR");
-            }
-
-            if (main_language.includes('es')){
-                window.location.replace('es.html');
-                console.log("ES");
-            }
-        };
-
+        if (window.location.search.indexOf('thank=you') > -1){
+            thanks.style.visibility="visible";
+        } else {
+            thanks.style.visibility="hidden";
+        }
     </script>
+
 </html>
