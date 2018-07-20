@@ -681,7 +681,21 @@ hr {
   color: #fff;
   overflow: hidden;
   position: relative;
-  background: #FF4500;
+  /* background: #FF4F09; */
+  background-image: url('../../assets/img/background5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -300px right 0;
+}
+
+#hero-area .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #hero-area .contents {
