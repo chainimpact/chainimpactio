@@ -326,6 +326,12 @@ hr {
   font-size: 30px;
 }
 
+.features-icon span {
+      color: #FF4500;
+      font-size: 30px;
+}
+
+
 .features-box .features-content h4 {
   font-size: 15px;
   font-weight: 500;
@@ -688,7 +694,6 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top -300px right 0;
 }
 
 #hero-area .overlay {
@@ -715,6 +720,14 @@ hr {
   /* font-weight: 700; */
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.header-button {
+    margin-bottom: 150px;
+}
+
+.head-title img {
+    max-width: 70%;
 }
 
 .sloder-img {
