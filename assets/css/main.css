@@ -690,7 +690,7 @@ hr {
   overflow: hidden;
   position: relative;
   /* background: #FF4F09; */
-  background-image: url('../../assets/img/background5.jpg');
+  background-image: url('../../assets/img/bg-tile.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
